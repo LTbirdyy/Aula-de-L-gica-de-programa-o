@@ -1,4 +1,4 @@
-quantidade = int(input('Escolha a quantidade de números para fazer a média'))
+quantidade = int(input('Escolha a quantidade de números para fazer a média:'))
 numeros = 0
 lista = list()
 for c in range(0,quantidade):
