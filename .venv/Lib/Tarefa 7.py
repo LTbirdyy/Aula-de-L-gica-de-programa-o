@@ -1,10 +1,7 @@
-quantidade = int(input('Escolha a quantidade de números para fazer a média:'))
-numeros = 0
-lista = list()
-for c in range(0,quantidade):
-    escolha = int(input('Escreva um número:'))
-    lista.append(escolha)
-    numeros += escolha
-resultado = numeros / quantidade
-print(f'A média dos números {lista} resulta em {resultado}')
-
+print('Me fale 3 valores para eu calcular a média deles')
+n1 = int(input('Valor 1:'))
+n2 = int(input('Valor 2:'))
+n3 = int(input('Valor 3:'))
+total = n1 + n2 + n3
+resposta = total/3
+print(f'A média dos valores {n1} {n2} {n3} é {resposta}')
