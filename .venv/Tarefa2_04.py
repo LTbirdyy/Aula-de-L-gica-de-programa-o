@@ -20,4 +20,4 @@ while True:
         break
     n_servico += 1
 print('<>'*37)
-print(f'O orçamento foi ultrapassado em {orcamento * -1} reais.')
+print(f'O orçamento foi ultrapassado em\033[31m R${orcamento * -1}\003[0m.')
