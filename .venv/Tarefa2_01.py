@@ -1,4 +1,4 @@
-cont_poositivo = 0
+cont = 0
 total = 0
 
 print('Fale quantos números quiser para eu fazer a média deles, caso queira parar escreva algum número negativo:')
@@ -7,7 +7,7 @@ while True:
     if n1 < 0:
         break
     if n1 > 0:
-        cont_poositivo += 1
+        cont += 1
         total += n1
         media = total/cont_poositivo
 print(f'A média dos valores dados é {media}')
