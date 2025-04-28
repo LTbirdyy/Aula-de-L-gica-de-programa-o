@@ -1,22 +1,7 @@
-# Python Program to find the L.C.M. of two input number
-
-def compute_lcm(x, y):
-
-   # choose the greater number
-   if x > y:
-       greater = x
-   else:
-       greater = y
-
-   while(True):
-       if((greater % x == 0) and (greater % y == 0)):
-           lcm = greater
-           break
-       greater += 1
-
-   return lcm
-
-num1 = 10
-num2 = 15
-
-print("The L.C.M. is", compute_lcm(num1, num2))
+primeiro = int(input('Primeiro termo:'))
+razao = int(input('Razão da PA: '))
+limite= int(input('Tamanho da PA:'))
+for c in range(primeiro, 1 + limite, razao):
+        print(c)
+# PARA DESCOBRIR E CERTO PONTO
+# decimo = primeiro +(posiçao do que quer-1)*razao
