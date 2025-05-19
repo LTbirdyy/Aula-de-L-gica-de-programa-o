@@ -1,31 +1,21 @@
-n1 = int(input('Fale o primeiro número'))
-salvo1 = n1
-n2 = int(input('Fale o segundo número'))
-salvo2 = n2
-# MDC
-if n1 == n2:
-    print(f'O MDC é {n1}')
-elif n1 < n2:
-    n1 = n2
-    temp = n2
-    n2 = n1
-resto = n1 % n2
-while resto != 0:
-    n1 = n2
-    n2 = resto
-    resto = n1 % n2
-# MMC
-n1 = salvo1
-n2 = salvo2
-if n1 > n2:
-    maior = n1
-else:
-    maior = n2
+print('Forneça os dados pedidos para calcular o MDC e MMC:')
 
-while True:
-    if maior % n1 == 0 and maior % n2 == 0:
-        mmc = maior
-        break
-    maior += 1
+valor_1 = int(input('Fale o primeiro valor inteiro positivo:'))
+salvo_1 = valor_1
 
-print(f'O MDC é {n2} e o MMC é {mmc}')
+valor_2 = int(input('Fale o segundo valor, também inteiro e positivo:'))
+salvo_2 =valor_2
+
+# Calcular MDC precisei usar o algoritmo de Euclides
+
+while valor_2 != 0:
+    resto = valor_1 % valor_2
+    valor_1 = valor_2
+    valor_2 = resto
+mdc = valor_1
+
+# Com o MDC a gente calcula o MMC so precisa usar os acumuladores criados no inicio
+
+mmc = (salvo_1 * salvo_2) / mdc
+
+print(f'O MDC é: {mdc}\nE o MMC é {mmc}')
