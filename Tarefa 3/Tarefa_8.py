@@ -1,7 +1,3 @@
-# 8) Crie uma lista com pelo menos 20 números inteiros positivos menores do
-# que 10. Então, o programa deverá mostrar quantas vezes cada um desses
-# números aparece na lista. Mostre na tela o número e quantas vezes ele
-# apareceu (mostre apenas uma vez para cada número diferente).
 lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 2, 3, 4, 1, 5, 1, 3, 4, 5, 3, 2]
 
 # Tirando as repetições dos números
